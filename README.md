@@ -2,7 +2,7 @@
 
 The whole article – [With or without enums in TypeScript](https://blog.beraliv.dev/2022-09-10-with-or-without-enums)
 
-Comparison:
+## Comparison
 
 | Approach             | Enum | Const enum | Const enum + `preserveConstEnums` | Object + `as const` | Union type |
 | :------------------- | :--- | :--------- | :-------------------------------- | :------------------ | :--------- |
@@ -13,3 +13,9 @@ Comparison:
 When you need to keep lookup object (enum, const enum + `preserveConstEnums` and object + `as const`), the optimal solution is always an object + `as const`.
 
 When you don't need a lookup object (const enum and union type), both const enum and union type are optimal.
+
+## Way to compare
+
+1. [TypeScript Playground](https://www.typescriptlang.org/play) to get JS output
+
+1. [size-limit](https://github.com/ai/size-limit) to calculate the size of each JS files
