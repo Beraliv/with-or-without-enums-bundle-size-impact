@@ -1,0 +1,76 @@
+{
+  "name": "with-or-without-enums-bundle-size-impact",
+  "version": "1.0.0",
+  "description": "Bundle size impact for different solutions",
+  "scripts": {
+    "size": "size-limit"
+  },
+  "author": "beraliv (Alexey Berezin)",
+  "license": "MIT",
+  "devDependencies": {
+    "@size-limit/file": "8.1.0",
+    "size-limit": "8.1.0"
+  },
+  "size-limit": [
+    {
+      "limit": "126 B",
+      "path": "numeric-enum.js"
+    },
+    {
+      "limit": "124 B",
+      "path": "heterogeneous-enum.js"
+    },
+    {
+      "limit": "116 B",
+      "path": "string-enum.js"
+    },
+    {
+      "limit": "44 B",
+      "path": "numeric-const-enum.js"
+    },
+    {
+      "limit": "48 B",
+      "path": "heterogeneous-const-enum.js"
+    },
+    {
+      "limit": "49 B",
+      "path": "string-const-enum.js"
+    },
+    {
+      "limit": "112 B",
+      "path": "numeric-const-enum-preserveConstEnums.js"
+    },
+    {
+      "limit": "117 B",
+      "path": "heterogeneous-const-enum-preserveConstEnums.js"
+    },
+    {
+      "limit": "108 B",
+      "path": "string-const-enum-preserveConstEnums.js"
+    },
+    {
+      "limit": "80 B",
+      "path": "numeric-obj-as-const.js"
+    },
+    {
+      "limit": "83 B",
+      "path": "heterogeneous-obj-as-const.js"
+    },
+    {
+      "limit": "83 B",
+      "path": "string-obj-as-const.js"
+    },
+    {
+      "limit": "44 B",
+      "path": "numeric-union.js"
+    },
+    {
+      "limit": "48 B",
+      "path": "heterogeneous-union.js"
+    },
+    {
+      "limit": "49 B",
+      "path": "string-union.js"
+    }
+  ]
+}
